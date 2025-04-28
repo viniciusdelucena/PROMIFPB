@@ -17,3 +17,21 @@ Exemplo de Saída:
 Soma: 10.0
 
 Multiplicação: 20.0
+
+R:
+
+public interface Calculadora {
+    double calcular(double a, double b);
+}
+
+public class Soma implements Calculadora {
+   public double calcular(double a, double b){
+    return a + b;
+   }
+}
+
+public class Multiplicacao implements Calculadora {
+    public double calcular(double a, double b){
+        return a * b;
+    }
+}
