@@ -1,3 +1,4 @@
+package assunto1.classes;
 /*
 
 Defina com suas palavras o que é uma classe e um objeto.

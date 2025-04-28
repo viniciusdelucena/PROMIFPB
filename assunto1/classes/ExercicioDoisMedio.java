@@ -1,3 +1,4 @@
+package assunto1.classes;
 /*
 
  Crie uma classe chamada Aluno que tenha dois atributos: nome (String) e matricula (int).

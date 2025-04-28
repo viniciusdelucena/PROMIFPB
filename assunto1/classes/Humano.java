@@ -1,6 +1,6 @@
 /* Estudo de forma simples de classe, objeto e instanciação */
 
-package classes;
+package assunto1.classes;
 
 public class Humano{
     String nome;

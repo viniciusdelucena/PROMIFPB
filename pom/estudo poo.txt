@@ -1,23 +1,10 @@
 ASSUNTOS 
 
-1. Classes, objetos e instanciação (Concluido)
+1. Classes, objetos e instanciação(Concluido)
 2. Herança
 3. Interfaces e classes abstratas
 4. Polimorfismo
 5. Coleções
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
@@ -36,12 +23,3 @@ av - 80 x 0,3
 
 pontuação total = 81,5
 
-
-------------------------------------
-
-objeto: tem que ter característica, comportamento e estado atual
-
-exemplos: caneta 
-característica = azul
-comportamento = escrevendo
-estado atual = aberta

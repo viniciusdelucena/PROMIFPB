@@ -1,4 +1,4 @@
-package heranca.exemploSimples;
+package assunto2.heranca.exemploSimples;
 
 public class Animal {
     String nome;
