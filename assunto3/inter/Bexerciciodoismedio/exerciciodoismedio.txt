@@ -1,0 +1,19 @@
+📚 Exercício Médio - Interface com Parâmetros
+
+Descrição:
+Crie uma interface chamada Calculadora com o seguinte método:
+
+double calcular(double a, double b): Este método irá realizar uma operação matemática entre os dois parâmetros a e b.
+
+Depois, crie duas classes:
+
+Soma: Implementa a interface Calculadora e retorna a soma de a e b.
+
+Multiplicacao: Implementa a interface Calculadora e retorna a multiplicação de a e b.
+
+Crie um método main para testar as classes e imprima os resultados de calcular() para diferentes valores de a e b.
+
+Exemplo de Saída:
+Soma: 10.0
+
+Multiplicação: 20.0

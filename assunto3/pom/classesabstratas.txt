@@ -8,6 +8,8 @@ Métodos abstratos: São métodos declarados, mas sem implementação. As subcla
 
 Métodos concretos: São métodos com implementação, que podem ser herdados ou sobrescritos pelas subclasses.
 
+----=-=--=-=-=-=-===-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=----
+
 Principais características:
 Uma classe abstrata pode ter tanto métodos abstratos quanto concretos.
 
@@ -21,6 +23,8 @@ Diferença entre interface e classe abstrata:
 Interface: Define apenas o contrato (o que deve ser feito), sem implementação. Não pode ter variáveis, apenas constantes.
 
 Classe abstrata: Pode fornecer tanto um contrato (métodos abstratos) quanto uma implementação (métodos concretos). Pode ter variáveis de instância.
+
+----=-=--=-=-=-=-===-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=----
 
 📋 Exemplo básico:
 java
@@ -56,6 +60,9 @@ public class Main {
         cachorro.dormir();    // Saída: O animal está dormindo.
     }
 }
+
+----=-=--=-=-=-=-===-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=----
+
 🔥 Dica prática:
 Use classes abstratas quando você quiser fornecer um comportamento comum, mas ainda exigir que as subclasses implementem métodos específicos. É útil quando você tem métodos que precisam de um comportamento padrão, mas outros precisam ser definidos pelas subclasses.
 

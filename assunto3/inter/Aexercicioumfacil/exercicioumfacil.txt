@@ -1,0 +1,51 @@
+📚 Exercício Fácil - Implementando uma Interface Simples
+
+Descrição:
+Crie uma interface chamada Veiculo com os seguintes métodos:
+
+ligar(): método para ligar o veículo.
+
+desligar(): método para desligar o veículo.
+
+Depois, crie duas classes: Carro e Moto, ambas implementando a interface Veiculo. Cada uma deve implementar os métodos ligar() e desligar() com mensagens diferentes, como por exemplo, "O carro está ligado." e "A moto está ligada.".
+
+Exemplo de Saída:
+Carro: O carro está ligado.
+
+Moto: A moto está ligada.
+
+R:
+
+package assunto3.inter.Aexercicioumfacil;
+
+public interface Veiculo {
+    
+    void ligar();
+    void desligar();
+
+}
+
+package assunto3.inter.Aexercicioumfacil;
+
+public class Carro implements Veiculo{
+
+    public void ligar(){
+        System.out.println("Carro ligado");
+    }
+    public void desligar(){
+        System.out.println("Carro desligado");
+    }
+}
+
+package assunto3.inter.Aexercicioumfacil;
+
+public class Moto implements Veiculo {
+
+    public void ligar(){
+        System.out.println("Moto ligada");
+    }
+    public void desligar(){
+        System.out.println("Moto desligada");
+    }
+    
+}
