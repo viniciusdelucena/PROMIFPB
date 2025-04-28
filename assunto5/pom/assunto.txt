@@ -79,9 +79,6 @@ PriorityQueue: Fila que ordena os elementos automaticamente conforme prioridade.
 
 Exemplo com Queue:
 
-java
-Copiar
-Editar
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -127,10 +124,15 @@ public class Exemplo {
 Resumo Visual
 
 Estrutura	Características
+
 List	Elementos ordenados e duplicados permitidos
+
 Set	Elementos únicos, sem duplicação
+
 Queue	Ordem de chegada ou prioridade
+
 Map	Pares chave → valor
+
 🔥 Dicas Importantes
 Use List se precisar de ordem e permitir elementos repetidos.
 
