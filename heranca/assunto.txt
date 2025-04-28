@@ -1,0 +1,12 @@
+Herança é um conceito onde uma classe pode "herdar" atributos e métodos de outra classe.
+É como se uma classe nova aproveitasse o que já existe em outra, sem precisar reescrever tudo.
+
+📌 Termos principais:
+Classe Pai (ou Classe Base ou Superclasse):
+→ É a classe que fornece os atributos e métodos.
+
+Classe Filho (ou Classe Derivada ou Subclasse):
+→ É a classe que herda da classe pai e pode usar ou até mudar (sobrescrever) o que herdou.
+
+📌 Palavra-chave usada:
+extends → usada para indicar que uma classe herda de outra.

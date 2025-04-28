@@ -1,0 +1,47 @@
+ASSUNTOS 
+
+1. Classes, objetos e instanciação (Concluido)
+2. Herança
+3. Interfaces e classes abstratas
+4. Polimorfismo
+5. Coleções
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+simulação 
+
+cra - 76 x 0,3
+mf - 73 0,4
+av - 100 0,3
+
+pontuação total = 82
+
+cra - 85 x 0,3
+mf - 80 x 0,4
+av - 80 x 0,3
+
+pontuação total = 81,5
+
+
+------------------------------------
+
+objeto: tem que ter característica, comportamento e estado atual
+
+exemplos: caneta 
+característica = azul
+comportamento = escrevendo
+estado atual = aberta
