@@ -1,0 +1,99 @@
+📚 Polimorfismo na Programação Orientada a Objetos (POO)
+
+O que é Polimorfismo?
+
+Polimorfismo significa "muitas formas".
+Em programação orientada a objetos, é a capacidade de um mesmo método ou comportamento se comportar de maneiras diferentes dependendo do objeto que o utiliza.
+
+----=-=--=-=-=-=-===-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=----
+
+Tipos de Polimorfismo
+
+1. Polimorfismo de Sobrecarga (Overloading)
+Ocorre dentro da mesma classe.
+
+O método tem o mesmo nome, mas parâmetros diferentes (tipo, número ou ordem).
+
+Exemplo:
+
+class Calculadora {
+    public int soma(int a, int b) {
+        return a + b;
+    }
+
+    public double soma(double a, double b) {
+        return a + b;
+    }
+}
+
+Aqui, o método soma se adapta dependendo dos tipos dos argumentos.
+
+----=-=--=-=-=-=-===-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=----
+
+2. Polimorfismo de Substituição (Override)
+
+Ocorre quando uma classe filha sobrescreve um método da classe pai.
+
+É usado para alterar o comportamento herdado.
+
+Usa-se a anotação @Override no Java para indicar substituição.
+
+Exemplo:
+
+class Animal {
+    public void fazerSom() {
+        System.out.println("Som de animal");
+    }
+}
+
+class Cachorro extends Animal {
+    @Override
+    public void fazerSom() {
+        System.out.println("Au Au");
+    }
+}
+
+----=-=--=-=-=-=-===-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=----
+
+Polimorfismo com Interfaces
+Uma interface define um conjunto de métodos que classes diferentes podem implementar de formas distintas.
+
+Exemplo:
+
+interface Forma {
+    void desenhar();
+}
+
+class Circulo implements Forma {
+    public void desenhar() {
+        System.out.println("Desenhando um círculo");
+    }
+}
+
+class Quadrado implements Forma {
+    public void desenhar() {
+        System.out.println("Desenhando um quadrado");
+    }
+}
+
+----=-=--=-=-=-=-===-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=----
+
+Resumo Rápido:
+
+Tipo	Característica
+
+Sobrecarga (Overloading)	Mesma classe, métodos com mesmo nome e parâmetros diferentes
+
+Substituição (Override)	Classe filha modifica o comportamento do método do pai
+
+Interfaces	Classes diferentes implementam métodos de maneira única
+
+----=-=--=-=-=-=-===-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=----
+
+🔥 Dicas Importantes
+
+Polimorfismo facilita a manutenção e a extensão de sistemas.
+
+Você pode tratar diferentes objetos de forma genérica usando o tipo da superclasse ou da interface.
+
+O uso correto do polimorfismo deixa o código mais flexível e reaproveitável.
