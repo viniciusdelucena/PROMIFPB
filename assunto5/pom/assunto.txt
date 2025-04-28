@@ -1,0 +1,141 @@
+📚 Coleções em Java
+
+O que são Coleções?
+
+Coleções são estruturas que armazenam grupos de objetos em Java.
+Elas fazem parte da Java Collections Framework, que fornece classes e interfaces para lidar com conjuntos de dados de forma eficiente.
+
+----=-=--=-=-=-=-===-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=----
+
+Principais Interfaces de Coleções
+
+Interface	Descrição
+
+List	Coleção ordenada que permite elementos duplicados.
+
+Set	Coleção sem elementos duplicados.
+
+Queue	Coleção usada para trabalhar com ordem de processamento (tipo fila).
+
+Map	Armazena pares chave-valor (exemplo: nome → idade).
+
+----=-=--=-=-=-=-===-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=----
+
+Principais Implementações
+
+- 1. List
+
+ArrayList: Lista baseada em um array. Acesso rápido por índice. Ideal para buscas.
+
+LinkedList: Lista baseada em nós ligados. Melhor para inserções e remoções no meio da lista.
+
+Exemplo com ArrayList:
+
+import java.util.ArrayList;
+
+public class Exemplo {
+    public static void main(String[] args) {
+        ArrayList<String> lista = new ArrayList<>();
+        lista.add("Maria");
+        lista.add("João");
+        lista.add("Ana");
+        
+        System.out.println(lista);  // [Maria, João, Ana]
+    }
+}
+
+----=-=--=-=-=-=-===-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=----
+
+2. Set
+
+HashSet: Não garante ordem dos elementos. Rápido para buscas e inserções.
+
+LinkedHashSet: Mantém a ordem de inserção.
+
+TreeSet: Mantém elementos ordenados automaticamente (ordem natural ou personalizada).
+
+Exemplo com HashSet:
+
+import java.util.HashSet;
+
+public class Exemplo {
+    public static void main(String[] args) {
+        HashSet<String> conjunto = new HashSet<>();
+        conjunto.add("Banana");
+        conjunto.add("Maçã");
+        conjunto.add("Banana");  // Ignorado (não aceita duplicados)
+        
+        System.out.println(conjunto);  // [Banana, Maçã] (ordem pode variar)
+    }
+}
+
+----=-=--=-=-=-=-===-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=----
+
+3. Queue
+
+LinkedList: Também pode ser usada como uma fila (FIFO – primeiro a entrar, primeiro a sair).
+
+PriorityQueue: Fila que ordena os elementos automaticamente conforme prioridade.
+
+Exemplo com Queue:
+
+java
+Copiar
+Editar
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Exemplo {
+    public static void main(String[] args) {
+        Queue<String> fila = new LinkedList<>();
+        fila.add("Pessoa1");
+        fila.add("Pessoa2");
+        fila.add("Pessoa3");
+
+        System.out.println(fila.poll());  // Pessoa1 (remove e retorna)
+        System.out.println(fila.peek());  // Pessoa2 (somente retorna, não remove)
+    }
+}
+
+----=-=--=-=-=-=-===-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=----
+
+4. Map
+
+HashMap: Armazena pares chave-valor. Não garante ordem.
+
+LinkedHashMap: Mantém a ordem de inserção dos pares.
+
+TreeMap: Ordena os pares pela chave.
+
+Exemplo com HashMap:
+
+import java.util.HashMap;
+
+public class Exemplo {
+    public static void main(String[] args) {
+        HashMap<String, Integer> mapa = new HashMap<>();
+        mapa.put("Ana", 25);
+        mapa.put("João", 30);
+        mapa.put("Maria", 22);
+
+        System.out.println(mapa.get("João"));  // 30
+    }
+}
+
+----=-=--=-=-=-=-===-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=----
+
+Resumo Visual
+
+Estrutura	Características
+List	Elementos ordenados e duplicados permitidos
+Set	Elementos únicos, sem duplicação
+Queue	Ordem de chegada ou prioridade
+Map	Pares chave → valor
+🔥 Dicas Importantes
+Use List se precisar de ordem e permitir elementos repetidos.
+
+Use Set se precisar garantir unicidade (sem repetição).
+
+Use Queue para fluxo de processos ou ordem de tarefas.
+
+Use Map quando precisar associar chaves a valores.
