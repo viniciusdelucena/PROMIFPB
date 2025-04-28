@@ -1,0 +1,62 @@
+📚 Conteúdo: Classes Abstratas em POO (Java)
+
+
+O que é uma classe abstrata?
+Uma classe abstrata é uma classe que não pode ser instanciada diretamente. Ela pode ter métodos abstratos (sem corpo), mas também pode ter métodos com implementação. A ideia de uma classe abstrata é fornecer uma base comum para outras classes, permitindo que elas herdem funcionalidades e implementem comportamentos específicos.
+
+Métodos abstratos: São métodos declarados, mas sem implementação. As subclasses são obrigadas a implementá-los.
+
+Métodos concretos: São métodos com implementação, que podem ser herdados ou sobrescritos pelas subclasses.
+
+Principais características:
+Uma classe abstrata pode ter tanto métodos abstratos quanto concretos.
+
+Uma classe abstrata não pode ser instanciada diretamente, mas pode ser instanciada por uma classe que a estenda.
+
+As subclasses de uma classe abstrata devem implementar todos os métodos abstratos ou também se tornar abstratas.
+
+Uma classe abstrata pode ter atributos (como variáveis de instância), ao contrário de interfaces.
+
+Diferença entre interface e classe abstrata:
+Interface: Define apenas o contrato (o que deve ser feito), sem implementação. Não pode ter variáveis, apenas constantes.
+
+Classe abstrata: Pode fornecer tanto um contrato (métodos abstratos) quanto uma implementação (métodos concretos). Pode ter variáveis de instância.
+
+📋 Exemplo básico:
+java
+Copiar
+Editar
+// Classe abstrata
+public abstract class Animal {
+    // Método abstrato
+    public abstract void emitirSom();
+    
+    // Método concreto
+    public void dormir() {
+        System.out.println("O animal está dormindo.");
+    }
+}
+
+// Classe concreta que estende a classe abstrata
+public class Cachorro extends Animal {
+    // Implementação do método abstrato
+    public void emitirSom() {
+        System.out.println("O cachorro late.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Não é possível instanciar uma classe abstrata
+        // Animal animal = new Animal();  // ERRO
+        
+        // Instanciando uma classe concreta
+        Animal cachorro = new Cachorro();
+        cachorro.emitirSom(); // Saída: O cachorro late.
+        cachorro.dormir();    // Saída: O animal está dormindo.
+    }
+}
+🔥 Dica prática:
+Use classes abstratas quando você quiser fornecer um comportamento comum, mas ainda exigir que as subclasses implementem métodos específicos. É útil quando você tem métodos que precisam de um comportamento padrão, mas outros precisam ser definidos pelas subclasses.
+
+Exemplo de quando usar: Suponha que você tenha uma classe Veiculo que tem um método mover(). Você pode criar um comportamento comum para mover() e, ao mesmo tempo, deixar que diferentes tipos de veículos (como Carro, Avião, etc.) implementem seus próprios comportamentos para o movimento.
