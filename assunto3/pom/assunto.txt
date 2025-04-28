@@ -1,0 +1,55 @@
+
+📚 Conteúdo: Interfaces em POO (Java)
+
+O que é uma interface?
+
+Uma interface é como um contrato que define métodos que uma classe precisa implementar.
+
+Não tem código dentro dos métodos (só a assinatura, ou seja, o nome, parâmetros e tipo de retorno).
+
+Uma classe que "assina" (implementa) uma interface é obrigada a criar o comportamento (corpo) dos métodos definidos lá.
+
+
+----=-=--=-=-=-=-===-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=----
+
+📌 Principais características:
+Todos os métodos em uma interface são públicos e abstratos (mesmo que você não escreva public e abstract).
+
+Uma interface não pode ter atributos comuns (mas pode ter constantes: public static final).
+
+Uma classe pode implementar várias interfaces ao mesmo tempo (Java permite herança múltipla de interfaces, mas não de classes).
+
+Interface = apenas definição do "o quê" fazer, não o "como".
+
+----=-=--=-=-=-=-===-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=---
+
+📋 Exemplo básico:
+
+// Interface
+public interface Animal {
+    void comer();
+    void dormir();
+}
+
+// Classe implementando a Interface
+public class Cachorro implements Animal {
+    public void comer() {
+        System.out.println("O cachorro está comendo.");
+    }
+
+    public void dormir() {
+        System.out.println("O cachorro está dormindo.");
+    }
+}
+Cachorro é obrigado a implementar comer() e dormir().
+
+Se esquecer de implementar algum método, dá erro de compilação!
+
+----=-=--=-=-=-=-===-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=---
+
+🔥 Dica prática:
+Use interfaces quando:
+
+Você quer garantir que várias classes tenham certos métodos, mas cada uma possa implementar de forma diferente.
+
+Você quer programar de maneira mais flexível e genérica (polimorfismo com interfaces é muito forte em Java).
