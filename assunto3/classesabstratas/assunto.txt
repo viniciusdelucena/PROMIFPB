@@ -1,6 +1,5 @@
 📚 Conteúdo: Classes Abstratas em POO (Java)
 
-
 O que é uma classe abstrata?
 Uma classe abstrata é uma classe que não pode ser instanciada diretamente. Ela pode ter métodos abstratos (sem corpo), mas também pode ter métodos com implementação. A ideia de uma classe abstrata é fornecer uma base comum para outras classes, permitindo que elas herdem funcionalidades e implementem comportamentos específicos.
 
@@ -27,9 +26,7 @@ Classe abstrata: Pode fornecer tanto um contrato (métodos abstratos) quanto uma
 ----=-=--=-=-=-=-===-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=----
 
 📋 Exemplo básico:
-java
-Copiar
-Editar
+
 // Classe abstrata
 public abstract class Animal {
     // Método abstrato
