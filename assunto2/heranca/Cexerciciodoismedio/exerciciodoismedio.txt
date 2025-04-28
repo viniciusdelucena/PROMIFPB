@@ -1,0 +1,31 @@
+Crie uma classe Funcionario com os atributos nome (String) e salario (double).
+Depois, crie uma classe Gerente que herde de Funcionario e tenha um atributo extra chamado departamento (String).
+
+No main, crie um gerente e imprima todas as suas informações.
+
+R:
+
+public class Funcionario{
+    String nome;
+    double salario;
+}
+
+public class Gerente extends Funcionario{
+    String departamento;
+}
+
+public class Main{
+    public static void main(String[] args){
+        Gerente antonio = new Gerente();
+
+        antonio.nome = "antonio";
+        antonio.salario = 1512;
+        antonio.departamento = "educação";
+
+        System.out.println("Nome: " + antonio.nome + "Salário: " + antonio.salario + "Departamento: " + antonio.departamento);
+    }
+}
+
+Explique com suas palavras o que acontece quando uma subclasse não tem um atributo, mas a superclasse tem. Ela pode usar? Precisa criar de novo?
+
+R: Se uma subclasse não tem um atributo ela herda os atributos da superclasse, e pode utiliza-los, não há necessidade de criar mais uma vez

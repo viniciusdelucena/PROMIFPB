@@ -1,4 +1,4 @@
-package assunto2.heranca.exemploSimples;
+package assunto2.heranca.Axemplosimples;
 
 public class Cachorro extends Animal {
     

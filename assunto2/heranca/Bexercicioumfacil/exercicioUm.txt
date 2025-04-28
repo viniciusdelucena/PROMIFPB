@@ -1,0 +1,42 @@
+Defina com suas palavras o que é herança em Programação Orientada a Objetos (POO).
+
+R: Você tem uma classe pai e uma classe filho que herda os atributos e métodos da classe pai, porém a classe filho pode ter mais métodos ou reescrever os métodos da classe pai.
+
+Complete o código para que a classe Gato herde da classe Animal:
+
+// Classe Animal
+public class Animal {
+    String nome;
+    
+    void fazerSom() {
+        System.out.println(nome + " está fazendo um som.");
+    }
+}
+
+// Classe Gato 
+public class Gato extends _______ {
+
+    void miar() {
+        System.out.println(nome + " está miando!");
+    }
+}
+
+R:
+
+public class Gato extends Animal {
+
+    void miar() {
+        System.out.println(nome + " está miando!");
+    }
+}
+
+Marque a alternativa correta:
+
+A herança permite que:
+
+(a) Um objeto crie novas classes automaticamente.
+(b) Uma classe herde atributos e métodos de outra.
+(c) Um método altere a classe mãe.
+(d) Dois objetos se fundam em um só.
+
+R: (b)

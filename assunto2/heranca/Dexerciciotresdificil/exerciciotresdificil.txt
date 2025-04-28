@@ -1,0 +1,17 @@
+Crie um pequeno sistema com:
+
+Uma classe Veiculo com atributos marca e modelo.
+
+Uma subclasse Carro que tenha o atributo adicional quantidadePortas.
+
+Uma subclasse Moto que tenha o atributo adicional cilindradas.
+
+Um método exibirDetalhes() em cada classe para mostrar as informações.
+
+No main, crie:
+
+1 carro.
+
+1 moto.
+
+Exiba os detalhes de ambos.
